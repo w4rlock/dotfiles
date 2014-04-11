@@ -1,0 +1,61 @@
+---------------------
+SELECTORES
+
+E[A]: Selecciona todos los elementos E que tengan el atributo A.
+E[A=V]: Selecciona todos los elementos E que tengan el atributo A y que este sea igual a V (value).
+E[A^=V]: Selecciona todos los elementos E que tengan el atributo A y cuyo valor empieza por V.
+E[A$=V]: Selecciona todos los elementos E que tengan el atributo A y cuyo valor termina por V.
+E[A*=V]: Selecciona todos los elementos E que tengan el atributo A y cuyo valor contenga la cadena V.
+
+E > F: Seleccionar todos los elementos F que sean hijos directos de E.
+E + F: Selecciona el elemento F que esté precedido directamente (al mismo nivel) por elementos E.
+E ~ F: Selecciona todos los elementos F que estén precedidos al mismo nivel por un elemento E.
+E:has(F): Selecciona todos los elementos E que tengan como hijos a elementos F.
+
+B:first: Primer elemento de la página que corresponde con el selector B.
+B:last:  Último elemento de la página que corresponde con el selector B.
+B:first-child: Los elementos de la selección B que son primer hijo.
+B:last-child:  Los elementos de la selección B que son último hijo.
+B:only-child:  Los elementos de la selección B que son hijo único.
+B:nth-child(n):  Los elementos de la selección B que son enésimo hijo contado a partir de uno.
+B:nth-child(odd|even)" Los elementos de la selección B que son hijo par o impar. El primer hijo es considerado impar
+B:even:  Los elementos de la selección B que son pares.
+B:odd: Los elementos de la selección B que son impares.
+B:eq(n): El enésimo elemento de la selección B contado a partir de cero.
+B:gt(n): Los elementos de la selección B que siguen al enésimo elemento contado a partir de cero.
+B:lt(n): Los elementos de la selección B que preceden al enésimo elemento contado a partir de cero.
+B:animated:  Elementos de la selección B que están en este momento siendo animados con alguno de los métodos de animación de jQuery.
+B:button:  Elementos de la selección B que son botones, es decir button, iput[type=submit], iput[type=reset] u iput[type=button].
+B:checkbox:  Elementos de la selección B de tipo iput[type=checkbox].
+B:enabled: Elementos de la selección B que tienen estado habilitado.
+B:file:  Elementos de la selección B de tipo iput[type=file].
+B:header:  Elementos de la selección B de tipo encabezado, es decir de tipo h1, hasta h6.
+B:hidden:  Elementos de la selección B que están escondidos.
+B:image: Elementos de la selección B de tipo iput[type=image].
+B:input: Elementos de la selección B que son campos de entrada, es decir imput, select, textarea y button.
+B:not(f):  Elementos de la selección B que no filtran con f, un filtro es cualquiera de los modificadores de selección que empiezan con dos puntos (:).
+B:parent:  Elementos de la selección B que don padres de una colección no vacía de hijos.
+B:password:  Elementos de la selección B de tipo iput[type=password].
+B:radio: Elementos de la selección B de tipo iput[type=radio].
+B:reset: Elementos de la selección B de tipo button[type=reset].
+B:selected:  Elementos de la selección B que están en estado seleccionado.
+B:submit:  Elementos de la selección B de tipo iput[type=submit] o button[type=submit].
+B:text:  Elementos de la selección B de tipo iput[type=text].
+B:visible: Elementos de la selección B que no están escondidos.
+B:contains contenga el texto dado
+
+----------------------------------------
+EXAMPLES
+
+$("*[alt*=Ian]") Supongamos que queremos seleccionar una imagen en cuyo alt, aparezca el texto “Ian”
+a:not[href^=http]
+
+$('a [href$=.png]');
+$('a [href^=http://]');
+$('img [title=thumbnail]');
+
+$("table[width=762] img[width=172]")
+$("table[width=762] a[href]")
+$("table[width=762]").find('img:[src*=show]')
+$("table[width=762]").find('p:not(:empty)')
+
