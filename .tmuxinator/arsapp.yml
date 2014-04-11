@@ -22,7 +22,7 @@ windows:
   - editor:
       layout: main-vertical
       panes:
-        - git pull && vim server.js soap-client.js controllers/users.js -p
+        - vim server.js soap-client.js controllers/users.js -p
   - server: 
       layout: main-vertical
       panes:

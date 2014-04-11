@@ -240,6 +240,7 @@ highlight GitGutterAddLine ctermfg=none
 highlight GitGutterAddDefault cterm=bold
 highlight GitGutterDeleteLine ctermbg=16
 highlight GitGutterChangeLine ctermbg=16
+highlight GitGutterAddLine ctermbg=16
 highlight airline_tabsel ctermbg=39 ctermfg=16
 
 
