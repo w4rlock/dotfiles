@@ -1,0 +1,101 @@
+!Xcursor.theme:              gentoo-silver
+!Xft.dpi:                   75
+
+URxvt.background:           black
+URxvt.foreground:           white
+URxvt.geometry:             150x30
+URxvt.jumpScroll:           true
+URxvt.skipScroll:           true
+URxvt.transparent:          true
+URxvt*shading:16
+URxvt*fading:30
+!URxvt.tintColor:      grey30
+!urxvt*font:        -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+urxvt*font: xft:Terminess Powerline:size=12
+!Xft.dpi:                    96
+!Xft.antialias:              true
+!Xft.rgba:                   rgb
+!Xft.hinting:                true
+!Xft.hintstyle:              hintslight
+!URxvt*font: xft:Terminess Powerline:size=12
+URxvt.mapAlert:             true
+URxvt.loginShell:           true
+URxvt.scrollBar:            false
+URxvt.scrollTtyOutput:      false
+URxvt.scrollWithBuffer:     true
+URxvt.scrollTtyKeypress:    true
+URxvt.saveLines:            65535
+URxvt.internalBorder:       5
+URxvt.externalBorder:       0
+URxvt.pastableTabs:         true
+URxvt.pointerBlank:         true
+URxvt.pointerBlankDelay:    5
+URxvt.tripleclickwords:     true
+
+URxvt.multiScroll:      true
+URxvt.scrollKey:      true
+
+! perl stuff
+URxvt.perl-ext-common:      default,matcher,confirm-paste
+URxvt.urlLauncher:          chromium-browser
+URxvt.matcher.button:       1
+
+
+!!black
+!*color0 :            #222222
+!*color8 :            #454545
+!!red
+!*color1 :            #B22222
+!*color9 :            #FA8072
+!!green
+!*color2 :            #556B2F
+!*color10:            #9ACD32
+!!yellow
+!*color3 :            #B8860B
+!*color11:            #DAA520
+!!blue
+!*color4 :            #4682B4
+!*color12:            #6495ED
+!!magenta
+!*color5 :            #9932CC
+!*color13:            #DA70D6
+!!cyan
+!*color6 :            #87CEEB
+!*color14:            #B0E0E6
+!!white
+!*color7 :            #C0C0C0
+!*color15:            #FFFFFF
+!
+! Black
+URxvt*color0:           #262626
+URxvt*color8:           #252525
+
+! Red
+URxvt*color1:           #C12121
+URxvt*color9:           #E50E0E
+
+! Green
+URxvt*color2:           #597b20
+URxvt*color10:          #89b83f
+
+! Yellow
+URxvt*color3:           #Ded838
+URxvt*color11:          #efef60
+
+! Blue
+URxvt*color4:           #265997
+URxvt*color12:          #3F6FD0
+
+! Magenta
+URxvt*color5:           #706c9a
+URxvt*color13:          #826ab1
+
+! Cyan
+URxvt*color6:           #69a2b0
+URxvt*color14:          #a1cdcd
+
+! White
+URxvt*color7:           #BBBBBB
+URxvt*color15:          #EEEEEF
+
+URxvt*colorUL:  yellow
