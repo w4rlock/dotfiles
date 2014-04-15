@@ -58,7 +58,8 @@ alias tar-list='tar -tvf $1'
 alias scrot='scrot -c -d 5'
 alias ls='ls --color=auto --group-directories-first'
 alias nodeinspector='node-inspector --debug 5858'
-alias arsapp_ide='tmuxinator start arsapp'
+alias tmux_ide_ars='tmuxinator start arsapp'
+alias tmux_wm='tmuxinator start w4rlock'
 alias wmserver_start='Xephyr -ac -br -noreset -screen 1024x700 :1 &'
 alias wmserver_stop='killall Xephyr'
 alias wmserver_app='DISPLAY=:1.0 $1 &'
@@ -91,3 +92,4 @@ autoload -U promptinit
 promptinit
 #Change Prompt: prompt walters
 #List Promps: prompt -p
+#

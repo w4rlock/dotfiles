@@ -1,4 +1,11 @@
-db = connect("localhost/arsdb");
+var dbs= db.adminCommand('listDatabases');
+var bb = {};
+
+print("\n======= DATABASES ========");
+for (var i=0; i < dbs.databases.length; i++){
+  bb = dbs.databases[i];
+  print(bb.name);
+}
 
 prompt = function() {
   return "DB:" + db + " Objs:"+db.stats().objects+" > ";
@@ -20,6 +27,16 @@ confirmEmail = function(){
   db.users.update({},  { $set: { active: 1, confirmToken: null}}, false, true);
 }
 
-db.getCollectionNames().forEach(function(collection) {
-  print(collection);
-});
+//printjson(db.stats());
+
+print("\n");
+db = connect("localhost/arsdb");
+print("\n======= COLLECTIONS =======");
+
+collections = function(){
+  db.getCollectionNames().forEach(function(collection) {
+    print(collection);
+  });
+}
+
+collections();
