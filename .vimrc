@@ -217,7 +217,7 @@ let NERDTreeIgnore=['\.md','\.pyc','\.git','\.svn','\.zip','\.jpg','\.odt','\.pd
 
 "{{{TO HTML
 ":ToHtml
-let html_number_lines=0
+let html_number_lines=1
 let html_use_css=1
 let use_xhtml=1
 "}}}

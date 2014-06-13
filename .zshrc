@@ -63,6 +63,7 @@ alias tmux_wm='tmuxinator start w4rlock'
 alias wmserver_start='Xephyr -ac -br -noreset -screen 1024x700 :1 &'
 alias wmserver_stop='killall Xephyr'
 alias wmserver_app='DISPLAY=:1.0 $1 &'
+alias browser_capture='phantomjs /usr/bin/browser_capture.js'
 
 
 export PATH="/usr/local/heroku/bin:/usr/local/heroku/bin:/home/emanuelr/.local/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/emanuelr/bbZ10/momentics:/home/emanuelr/bbZ10/VMImages/BlackBerry10Simulator-BB10_2_1-1925/controllers:/home/emanuelr/bbZ10/momentics:/home/emanuelr/bbZ10/VMImages/BlackBerry10Simulator-BB10_2_1-1925/controllers"

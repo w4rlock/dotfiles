@@ -11,26 +11,16 @@ prompt = function() {
   return "DB:" + db + " Objs:"+db.stats().objects+" > ";
 }
 
-users = function(){
-  db.users.find().forEach(function(collection) {
-    printjson(collection);
-  });
-}
-
-aseguradoras = function(){
-  db.aseguradoras.find().forEach(function(collection) {
-    printjson(collection);
-  });
-}
-
-confirmEmail = function(){
-  db.users.update({},  { $set: { active: 1, confirmToken: null}}, false, true);
-}
+users = function(){ db.users.find().forEach(function(collection) { printjson(collection); }); }
+aseguradoras = function(){ db.aseguradoras.find().forEach(function(collection) { printjson(collection); }); }
+confirmEmail = function(){ db.users.update({},  { $set: { active: 1, confirmToken: null}}, false, true); }
+denuncias = function(){ db.denuncia.find().forEach(function(collection) { printjson(collection); }); }
 
 //printjson(db.stats());
 
 print("\n");
-db = connect("localhost/arsdb");
+db = connect("localhost/segdb");
+//db = connect("localhost/arsdb");
 print("\n======= COLLECTIONS =======");
 
 collections = function(){
