@@ -1,3 +1,4 @@
+DBQuery.prototype._prettyShell = true;
 var dbs= db.adminCommand('listDatabases');
 var bb = {};
 
