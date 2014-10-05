@@ -20,7 +20,7 @@ denuncias = function(){ db.denuncia.find().forEach(function(collection) { printj
 //printjson(db.stats());
 
 print("\n");
-db = connect("localhost/segdb");
+db = connect("localhost/eatnow_db");
 //db = connect("localhost/arsdb");
 print("\n======= COLLECTIONS =======");
 

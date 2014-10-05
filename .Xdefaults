@@ -7,11 +7,11 @@ URxvt.geometry:             150x30
 URxvt.jumpScroll:           true
 URxvt.skipScroll:           true
 URxvt.transparent:          true
-URxvt*shading:16
-URxvt*fading:30
+URxvt*shading:26
+URxvt*fading:20
 !URxvt.tintColor:      grey30
 !urxvt*font:        -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
-urxvt*font: xft:Terminess Powerline:size=12
+urxvt*font: xft:Terminess Powerline:size=8
 !Xft.dpi:                    96
 !Xft.antialias:              true
 !Xft.rgba:                   rgb
@@ -67,8 +67,10 @@ URxvt.matcher.button:       1
 !*color15:            #FFFFFF
 !
 ! Black
-URxvt*color0:           #262626
-URxvt*color8:           #252525
+!URxvt*color0:           #262626
+URxvt*color0:           #101010
+!URxvt*color8:           #252525
+URxvt*color8:           #101010
 
 ! Red
 URxvt*color1:           #C12121

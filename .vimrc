@@ -33,6 +33,8 @@ Bundle 'gmarik/vundle'
 " Keep bundle commands between here and filetype plugin indent on.
 " scripts on GitHub repos
 Bundle 'flazz/vim-colorschemes'
+Bundle 'xolox/vim-colorscheme-switcher'
+Bundle 'xolox/vim-misc'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Shougo/unite.vim'
@@ -223,15 +225,19 @@ let use_xhtml=1
 "}}}
 
 colorscheme badwolf
-"let g:airline_theme = 'hybrid'
-let g:airline_theme = 'zenburn'
+"colorscheme molokai
+let g:airline_theme = 'hybrid'
+"let g:airline_theme = 'zenburn'
+"let g:airline_theme = 'zenburn'
 let g:indent_guides_auto_colors = 0 
 
 highlight Folded ctermbg=16
 highlight Normal ctermbg=16
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
 highlight IndentGuidesOdd ctermbg=232
 highlight IndentGuidesEven ctermbg=236
-highlight LineNr ctermbg=16 ctermfg=236
+"highlight LineNr ctermbg=16 ctermfg=236
 highlight Cursorline cterm=bold ctermbg=16
 highlight CursorLineNr cterm=bold ctermbg=16 ctermfg=yellow
 highlight WildMenu ctermbg=16 ctermfg=white
@@ -241,7 +247,11 @@ highlight GitGutterAddDefault cterm=bold
 highlight GitGutterDeleteLine ctermbg=16
 highlight GitGutterChangeLine ctermbg=16
 highlight GitGutterAddLine ctermbg=16
-highlight airline_tabsel ctermbg=39 ctermfg=16
+"highlight airline_tabsel ctermbg=39 ctermfg=16
+
+"bottom left"
+"highlight airline_a ctermbg=234 ctermfg=16
+"highlight airline_a_bold ctermbg=234 ctermfg=16
 
 
 let g:airline#extensions#whitespace#enabled = 0
