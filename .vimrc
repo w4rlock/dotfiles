@@ -13,7 +13,8 @@ set noerrorbells                              " no beep or flash for errors
 set backspace=indent,eol,start
 set numberwidth=5
 set foldmethod=marker
-
+set numberwidth=8
+"set showmatch
 set incsearch
 set ignorecase
 set smartcase
@@ -26,12 +27,7 @@ call vundle#rc()
 "let path = '~/some/path/here'
 "call vundle#rc(path)
 
-" let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
-
-" The following are examples of different formats supported.
-" Keep bundle commands between here and filetype plugin indent on.
-" scripts on GitHub repos
 Bundle 'flazz/vim-colorschemes'
 Bundle 'xolox/vim-colorscheme-switcher'
 Bundle 'xolox/vim-misc'
@@ -39,7 +35,6 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Shougo/unite.vim'
 Bundle 'scrooloose/syntastic'
-"Bundle 'edkolev/tmuxline.vim'
 
 "Bundle "wookiehangover/jshint.vim"
 
@@ -231,23 +226,6 @@ let g:airline_theme = 'hybrid'
 "let g:airline_theme = 'zenburn'
 let g:indent_guides_auto_colors = 0 
 
-highlight Folded ctermbg=16
-highlight Normal ctermbg=16
-highlight Normal ctermbg=none
-highlight NonText ctermbg=none
-highlight IndentGuidesOdd ctermbg=232
-highlight IndentGuidesEven ctermbg=236
-"highlight LineNr ctermbg=16 ctermfg=236
-highlight Cursorline cterm=bold ctermbg=16
-highlight CursorLineNr cterm=bold ctermbg=16 ctermfg=yellow
-highlight WildMenu ctermbg=16 ctermfg=white
-highlight Comment ctermfg=234
-highlight GitGutterAddLine ctermfg=none
-highlight GitGutterAddDefault cterm=bold
-highlight GitGutterDeleteLine ctermbg=16
-highlight GitGutterChangeLine ctermbg=16
-highlight GitGutterAddLine ctermbg=16
-"highlight airline_tabsel ctermbg=39 ctermfg=16
 
 "bottom left"
 "highlight airline_a ctermbg=234 ctermfg=16
@@ -274,3 +252,32 @@ let xml_syntax_folding=1      " XML
 "set foldmethod=syntax
 "set foldmethod=indent
 set foldnestmax=2
+
+highlight Folded ctermbg=16
+highlight Normal ctermbg=16
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight IndentGuidesOdd ctermbg=232
+highlight IndentGuidesEven ctermbg=236
+"highlight LineNr ctermbg=16 ctermfg=236
+highlight Cursorline cterm=bold ctermbg=16
+highlight CursorLineNr cterm=bold ctermbg=16 ctermfg=yellow
+highlight WildMenu ctermbg=16 ctermfg=white
+highlight Comment ctermfg=234
+highlight GitGutterAddLine ctermfg=none
+highlight GitGutterAddDefault cterm=bold
+highlight GitGutterDeleteLine ctermbg=16
+highlight GitGutterChangeLine ctermbg=16
+highlight GitGutterAddLine ctermbg=16
+"highlight airline_tabsel ctermbg=1
+"highlight airline_tabmod ctermbg=1
+
+let g:airline#themes#hybrid#palette = g:airline#themes#hybrid#palette
+let g:airline#themes#hybrid#palette.tabline = {
+\ 'airline_tabsel':  ['#ffffff', '#ff0000',  231, 1, ''],                                                                                                                                                         
+\ 'airline_tabmod':  ['#ff0000', '#000000',  231, 1, ''],
+\ 'airline_tabtype':  ['#ffffff', '#ff0000',  231, 1, ''],
+\ }
+
+"\ 'airline_tabfill':  ['#000000', '#000000',  0, 0, ''],
+"\ 'airline_tabfill':  ['#ffffff', '#000000',  0, 0, ''],
