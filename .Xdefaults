@@ -7,7 +7,7 @@ URxvt.geometry:             150x30
 URxvt.jumpScroll:           true
 URxvt.skipScroll:           true
 URxvt.transparent:          true
-URxvt*shading:26
+URxvt*shading:15
 URxvt*fading:20
 !URxvt.tintColor:      grey30
 !urxvt*font:        -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-*-*

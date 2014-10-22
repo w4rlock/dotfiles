@@ -271,12 +271,14 @@ highlight GitGutterChangeLine ctermbg=16
 highlight GitGutterAddLine ctermbg=16
 "highlight airline_tabsel ctermbg=1
 "highlight airline_tabmod ctermbg=1
+hi airline_tab_to_airline_tabfill ctermbg=none
 
 let g:airline#themes#hybrid#palette = g:airline#themes#hybrid#palette
 let g:airline#themes#hybrid#palette.tabline = {
-\ 'airline_tabsel':  ['#ffffff', '#ff0000',  231, 1, ''],                                                                                                                                                         
-\ 'airline_tabmod':  ['#ff0000', '#000000',  231, 1, ''],
-\ 'airline_tabtype':  ['#ffffff', '#ff0000',  231, 1, ''],
+\ 'airline_tabsel':  ['#ffffff', '#000000',  231, 1, ''],
+\ 'airline_tabfill':  ['#ffffff', '#000000',  0, 0, ''],
+\ 'airline_tabmod':  ['#000000', '#000000',  231, 1, ''],
+\ 'airline_tabtype':  ['#ffffff', '#000000',  231, 1, ''],
 \ }
 
 "\ 'airline_tabfill':  ['#000000', '#000000',  0, 0, ''],
